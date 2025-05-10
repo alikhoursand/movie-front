@@ -1,0 +1,143 @@
+/*@import url('./jalalidatepicker.min.css');*/
+@import url('./iranyekan.css');
+@import "tailwindcss";
+
+@theme {
+    --breakpoint-xs: 31.25rem;
+    --breakpoint-2xs: 25rem;
+}
+
+
+@source "../views";
+
+@plugin "daisyui" {
+    themes: light --default, dark --prefersdark;
+}
+@plugin "daisyui/theme" {
+    name: "light";
+    default: false;
+    prefersdark: false;
+    color-scheme: "light";
+    --color-base-100: oklch(100% 0 0);
+    --color-base-200: oklch(98% 0 0);
+    --color-base-300: oklch(95% 0 0);
+    --color-base-content: oklch(21% 0.006 285.885);
+    --color-primary: oklch(76% 0.233 130.85);
+    --color-primary-content: oklch(98% 0.031 120.757);
+    --color-secondary: oklch(65% 0.241 354.308);
+    --color-secondary-content: oklch(94% 0.028 342.258);
+    --color-accent: oklch(77% 0.152 181.912);
+    --color-accent-content: oklch(98% 0.014 180.72);
+    --color-neutral: oklch(14% 0.005 285.823);
+    --color-neutral-content: oklch(92% 0.004 286.32);
+    --color-info: oklch(62% 0.265 303.9);
+    --color-info-content: oklch(96% 0.016 293.756);
+    --color-success: oklch(62% 0.194 149.214);
+    --color-success-content: oklch(97% 0.021 166.113);
+    --color-warning: oklch(76% 0.188 70.08);
+    --color-warning-content: oklch(98% 0.022 95.277);
+    --color-error: oklch(57% 0.245 27.325);
+    --color-error-content: oklch(96% 0.015 12.422);
+    --radius-selector: 2rem;
+    --radius-field: 1rem;
+    --radius-box: 1rem;
+    --size-selector: 0.28125rem;
+    --size-field: 0.28125rem;
+    --border: 2px;
+    --depth: 1;
+    --noise: 0;
+}
+@plugin "daisyui/theme" {
+    name: "dark";
+    default: false;
+    prefersdark: false;
+    color-scheme: "dark";
+    --color-base-100: oklch(25.33% 0.016 252.42);
+    --color-base-200: oklch(23.26% 0.014 253.1);
+    --color-base-300: oklch(21.15% 0.012 254.09);
+    --color-base-content: oklch(97.807% 0.029 256.847);
+    --color-primary: oklch(76% 0.233 130.85);
+    --color-primary-content: oklch(98% 0.031 120.757);
+    --color-secondary: oklch(65% 0.241 354.308);
+    --color-secondary-content: oklch(94% 0.028 342.258);
+    --color-accent: oklch(77% 0.152 181.912);
+    --color-accent-content: oklch(98% 0.014 180.72);
+    --color-neutral: oklch(14% 0.005 285.823);
+    --color-neutral-content: oklch(92% 0.004 286.32);
+    --color-info: oklch(62% 0.265 303.9);
+    --color-info-content: oklch(96% 0.016 293.756);
+    --color-success: oklch(62% 0.194 149.214);
+    --color-success-content: oklch(97% 0.021 166.113);
+    --color-warning: oklch(76% 0.188 70.08);
+    --color-warning-content: oklch(98% 0.022 95.277);
+    --color-error: oklch(70% 0.191 22.216);
+    --color-error-content: oklch(96% 0.015 12.422);
+    --radius-selector: 2rem;
+    --radius-field: 1rem;
+    --radius-box: 1rem;
+    --size-selector: 0.28125rem;
+    --size-field: 0.28125rem;
+    --border: 2px;
+    --depth: 1;
+    --noise: 0;
+}
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+body {
+    font-family: "IRANYekan" !important;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: oklch(76% 0.233 130.85);
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 0;
+}
+
+aside ::-webkit-scrollbar {
+    width: 3px;
+    height: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #1c64f2;
+    border-radius: 5px;
+}
+
+aside ::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 5px;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+
+/* hide number input arrows */
+/* Chrome, Safari, Edge, Opera */
+#postal_code::-webkit-outer-spin-button,
+#postal_code::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+#postal_code {
+    -moz-appearance: textfield;
+}
+
+.product-slider{
+    padding: 8px !important;
+}
