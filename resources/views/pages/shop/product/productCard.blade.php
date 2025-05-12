@@ -2,7 +2,7 @@
     <figure class="">
         <a href="{{route('product.view')}}" class=" group  relative  block w-full">
             <div
-                class="group-hover:top-0 top-full duration-200 w-full h-full bg-neutral/75 absolute flex items-center justify-center">
+                class="group-hover:top-0 top-full duration-300 w-full h-full bg-neutral/75 absolute flex items-center justify-center">
                 <button class="btn btn-primary">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
                         <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>

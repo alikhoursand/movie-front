@@ -67,6 +67,7 @@
 
                 </div>
             </div>
+            <div class="p-4 rounded-box bg-base-200"></div>
             <div class="p-4 rounded-box mt-4 bg-base-200">
                 <h3 class="block text-2xl font-medium">
                     بازیگران
