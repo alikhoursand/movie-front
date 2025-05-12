@@ -1,5 +1,5 @@
 <div class=" swiper product-slider">
-    <div class="swiper-wrapper pt-4 pb-8 rounded-box">
+    <div class="swiper-wrapper py-4 rounded-box">
         @php
             $x = array(1,2,3,4,5);
         @endphp

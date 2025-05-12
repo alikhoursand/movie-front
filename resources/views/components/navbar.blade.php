@@ -10,7 +10,7 @@
                     </svg>
                 </div>
             </div>
-            <a class="text-primary text-2xl lg:text-3xl font-bold">{{config('app.site_name')}}</a>
+            <a href="{{route('home')}}" class="text-primary text-2xl lg:text-3xl font-bold">{{config('app.site_name')}}</a>
         </div>
         <div class=" hidden lg:flex justify-center align-center basis-5/12">
             <div class=" w-full">

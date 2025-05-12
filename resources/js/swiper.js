@@ -32,6 +32,45 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
 
+    new Swiper(".cat-swiper", {
+        modules: [Autoplay, Navigation],
+        slidesPerView: 2,
+        autoplay: {
+            delay: 4500,
+            disableOnInteraction: false,
+        },
+        speed: 750,
+        loop: true,
+        breakpoints: {
+            0: {
+                slidesPerView: 2,
+                spaceBetween: 5,
+            },
+            450: {
+                slidesPerView: 2.5,
+                spaceBetween: 15,
+            },
+            650: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            800: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+            950: {
+                slidesPerView: 5,
+                spaceBetween: 20,
+            },
+            1100: {
+                slidesPerView: 5.5,
+                spaceBetween: 20,
+            },
+
+        },
+
+    });
+
     new Swiper(".banner-swiper", {
         modules: [Autoplay, Navigation],
         slidesPerView: 2,
